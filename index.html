@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos_inicio.css">
+    <link rel="shortcut icon" href="Recursos/IMG/Icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8854b19f7c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/media.css">
+    <title>Flautín</title>
+</head>
+<body>
+    <video class="videoFondo" autoplay muted loop>
+        <source src="Recursos/VIDEOS/VideoMusical.mp4" type="video/mp4">
+    </video>
+    <nav id="navegacion">
+        <div class="nav1">
+            <img class="miIcono" src="Recursos/IMG/Icon.png" alt="Ícono de la página, runa">
+        </div>
+        <div class="nav2">
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-tablet-alt"></i>
+            <i class="fa-solid fa-mobile-alt"></i>
+        </div>
+        <div class="nav3">
+            <ul class="listaInicio">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Profesores">Profesores</a></li>
+                <li><a href="#Clientes">Clientes</a></li>
+                <li><a href="#Formato">Formato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="inicio" id="inicio">
+        <div class="contenidoInicio">
+            <div class="CONTENIDO_SUP">
+                <h1>BIENVENIDO A FLAUTIN</h1>
+                <h2>Tu página de teoría musical.</h2>
+            </div>
+            <div class="CONTENIDO_INF">
+                <div class="DIVISIONES_CONTENIDO">
+                    <button class="btnDivisiones" id="btnInstrumento">
+                        <span><i class="fa-solid fa-music"></i></span>
+                        <span><p>Aprende tu instrumento</p></span>
+                    </button>
+                </div>
+                <div class="DIVISIONES_CONTENIDO">
+                    <button class="btnDivisiones" id="btnEstudia">
+                        <span><i class="fa-solid fa-guitar"></i></span>
+                        <span><p>Estudia desde las bases</p></span>
+                    </button>
+                </div>
+                <div class="DIVISIONES_CONTENIDO">
+                    <button class="btnDivisiones" id="btnEnseña">
+                        <span><i class="fa-solid fa-music"></i></span>
+                        <span><p>Capacítate a enseñar</p></span>
+                    </button>
+                </div>
+                <div class="DIVISIONES_CONTENIDO">
+                    <button class="btnDivisiones" id="btnAtencion">
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        <span><p>Atencion 24/7</p></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal" id="modalInstrumento">
+        <div class="contenidoModal">
+            <div class="fila1">
+                <div class="cerrar"><i class="fa-solid fa-x"></i></div></i>
+            </div>
+            <div class="fila2">
+                <div class="division1">
+                    <img src="Recursos/IMG/yo.png" alt="Una foto de Bruno Guichón tocando la guitarra en vivo" class="imagenMia">
+                </div>
+                <div class="division2">
+                    <p class="parrafoInfo">
+                        La práctica es esencial para convertirse en un gran músico, "alguien que hace algo durante 8 horas al día, no importa qué tan mal lo haga, es probable que en algún momento le salga algo bueno".
+                    </p>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="modal" id="modalEstudia">
+        <div class="contenidoModal">
+            <div class="fila1">
+                <div class="cerrar"><i class="fa-solid fa-x"></i></div></i>
+            </div>
+            <div class="fila2">
+                <div class="division1">
+                    <img src="Recursos/IMG/yo.png" alt="Una foto de Bruno Guichón tocando la guitarra en vivo" class="imagenMia">
+                </div>
+                <div class="division2">
+                    <p class="parrafoInfo">
+                        Diviértete aprendiendo todo lo que puedas, la teoría musical es un campo de estudio muy amplio, y el conocimiento en la música te ayudará a pulir tu talento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalEnseña">
+        <div class="contenidoModal">
+            <div class="fila1">
+                <div class="cerrar"><i class="fa-solid fa-x"></i></div></i>
+            </div>
+            <div class="fila2">
+                <div class="division1">
+                    <img src="Recursos/IMG/yo.png" alt="Una foto de Bruno Guichón tocando la guitarra en vivo" class="imagenMia">
+                </div>
+                <div class="division2">
+                    <p class="parrafoInfo">
+                        Sé capaz de enseñar, puesto que el conocimiento que adquieras es tan amplio que podrías extenderlo hacia otras personas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAtencion">
+        <div class="contenidoModal">
+            <div class="fila1">
+                <div class="cerrar"><i class="fa-solid fa-x"></i></div></i>
+            </div>
+            <div class="fila2">
+                <div class="division1">
+                    <img src="Recursos/IMG/yo.png" alt="Una foto de Bruno Guichón tocando la guitarra en vivo" class="imagenMia">
+                </div>
+                <div class="division2">
+                    <p class="parrafoInfo">
+                        Nuestros capacitados profesores de música están disponibles las 24 horas del día, y puesto que son muchos aquellos los que no disponen de horario, nosotros te lo resolvemos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="Profesores" id="Profesores">
+        <div class="contenido">
+            <div class="CONTENIDO_2">
+                <img src="Recursos/IMG/profesor.png" alt="Uno de los profesores de guitarra de Flautin." class="imagenOtra">
+            </div>
+            <div class="CONTENIDO_1">
+                <p>Los profesores tienen gran experiencia en el ámbito, en Flautín nos encargamos de buscar a aquellos no solo capaces de dominar su instrumento, sino también capaces de enseñar a la perfección, ¡incluso hay profesores que antes eran alumnos!</p>
+            </div>
+        </div>
+    </section>
+    <section class="Clientes" id="Clientes">
+        <div class="contenido">
+            <div class="CONTENIDO_3">
+                <p>He aquí uno de los alumnos en Flautín, se llama Estéban, y con tan solo 17 años ya pudo dominar la guitarra de una forma espléndida, estando a punto de sacar su primer álbum solista.</p>
+            </div>
+            <div class="CONTENIDO_2">
+                <img src="Recursos/IMG/estudiante.png" alt="Uno de los estudiantes de guitarra de Flautin." class="imagenOtra">
+            </div>
+        </div>
+    </section>
+    <section class="Formato" id="Formato">
+        <div class="contenido">
+            <div class="CONTENIDO_2">
+                <img src="Recursos/IMG/formato.png" alt="Uno de los estudiantes de guitarra de Flautin, aprendiendo vía online." class="imagenOtra">
+            </div>
+            <div class="CONTENIDO_1">
+                <p>¡Puedes aprender desde cualquier parte del mundo! En Flautín contamos con profesores de distintas regiones de nuestro planeta, y aunque no puedas participar en clases presenciales, la virtualidad ya está aquí.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Formato" id="Formato">
+        <div class="contenido">
+            <div class="CONTENIDO_1">
+                <p>¡Encuéntranos aquí!</p>
+            </div>
+            <div class="CONTENIDO_3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13090.424231803565!2d-56.1872631!3d-34.8912374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f803bdb8919a1%3A0x2e117452a699c880!2sPalacio%20Legislativo!5e0!3m2!1ses-419!2suy!4v1732077958129!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="googleMap"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="pieDePagina">
+        <div class="datosContacto">
+            <ul class="laListaDeDatos">
+                <li class="liContacto"><i class="fa-solid fa-phone-volume"></i> &nbsp; &nbsp; Contacto: 123456789</li>
+                <li class="liDireccion"><i class="fa-solid fa-circle-info"></i> &nbsp; &nbsp; Dirección: Pepito Juarez 1234</li>
+                <li class="liForo"><i class="fa-solid fa-circle-question"></i> &nbsp; &nbsp; Foro: https://foroDeFlautin.com.uy</li>
+            </ul>
+        </div>
+        <div class="contenedorFormulario">
+            <form action="post" method="post" class="formulario">
+                <span>
+                    <p>Nombre: &nbsp; &nbsp; </p>
+                    <input type="text" name="inputNombre" class="camposDentro" placeholder="Pepito" maxlength="26">
+                    <input type="text" name="inputApellido" class="camposDentro" placeholder="Juarez" maxlength="26">
+                </span>
+                <span>
+                    <p>Teléfono: &nbsp; &nbsp; </p>
+                    <input type="tel" name="inputTelefono" class="camposFuera" placeholder="091111111" minlength="9">
+                </span>
+                <span>
+                    <p>Dirección: &nbsp; </p>
+                    <input type="text" name="inputDireccion" class="camposFuera" placeholder="Pepito Juarez 1234" minlength="7">
+                </span>
+                <span>
+                    <button type="submit" class="btnFormulario">Enviar</button>
+                </span>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
